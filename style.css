@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("image.jpg");
+
+}
+
+.container{
+    /* background-color: #ffffff; */
+    background:transparent;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.62em;
+    box-shadow: 0 1.25em 1.8em rgba(214, 218, 231, 0.25);
+    backdrop-filter: blur(10px);
+    border: 2px solid silver;
+
+    
+}
+
+.search-wrapper{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+    padding-bottom: 20px;
+}
+.search-wrapper button{
+    font-size: 1em;
+    background:transparent;
+    color: #ffffff;
+    border: 2px solid rgb(19, 208, 221);
+    border-radius: 1.5em;
+    padding: 0.8em 0;
+}
+.search-wrapper button:hover{
+    background:transparent;
+    color: rgb(243, 246, 247);
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+      transition-delay: .2s;
+}
+
+.search-wrapper input{
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid rgba(19,208,221);
+    outline: none;
+    color: #66dbd2;
+    background: transparent;
+}
+
+
+.search-wrapper p{
+    color: red;
+}
+
+.wrapperimg{
+    display: flex;
+    justify-content: center;
+}
+.wrapperimg img{
+    display: flex;
+    height: 10rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1.25em 1.8em rgba(208, 213, 230, 0.25);
+}
+
+
+.heading2{
+    font-size: 40px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.17em;
+    font-variant: small-caps;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #fff;   
+    text-shadow:
+      0 0 7px #ffffff27,
+      0 0 10px #ffffff62,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+h3{
+    font-size: 25px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:0.17em;
+    text-align:left;
+    font-style: oblique;
+    display: inline;
+    font-weight: 800;
+    font-variant: small-caps;
+    color: #fff;   
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: oblique;
+    padding-left: 40px;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;   
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+}
+
+h1{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-size: 5rem;
+    padding-top: .29em;
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #0a0a0a,
+      0 0 42px rgb(9, 223, 205),
+      0 0 82px rgb(9, 228, 199),
+      0 0 92px rgb(18, 221, 228),
+      0 0 102px rgb(10, 169, 231),
+      0 0 151px rgb(14, 193, 224);
+}
+h1{
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
